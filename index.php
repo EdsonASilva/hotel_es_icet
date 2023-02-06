@@ -33,6 +33,17 @@
             <li><a class="dropdown-item" href="?page=listar_cliente">Listar</a></li>
           </ul>
         </li>
+          
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Categoria
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="?page=nova_categoria">Nova</a></li>
+            <li><a class="dropdown-item" href="?page=listar_categoria">Listar</a></li>
+          </ul>
+        </li>
+          
       </ul>
     </div>
   </div>
@@ -52,11 +63,23 @@
               case "listar_cliente":
                   include("listar-cliente.php");
                   break;
-               case "salvar_cliente":
+              case "salvar_cliente":
                   include("salvar-cliente.php");
                   break;
-                case "editar_cliente":
+              case "editar_cliente":
                   include("editar-cliente.php");
+                  break;
+              case "nova_categoria":
+                  include("nova-categoria.php");
+                  break;
+              case "listar_categoria":
+                  include("listar-categoria.php");
+                  break;
+              case "salvar_categoria":
+                  include("salvar-categoria.php");
+                  break;
+              case "editar_categoria":
+                  include("editar-categoria.php");
                   break;
           }
         ?>
