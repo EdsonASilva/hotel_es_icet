@@ -1,10 +1,10 @@
 <h1>Categoria de Quartos</h1>
 
-<!--script>
+<script>
     document.getElementById("valor").addEventListener("change", function(){
-            this.value = parseFloat(this.value).toFixed(3);
+            this.value = parseFloat(this.value).toFixed(2);
     });
-</script-->
+</script>
 
 <form action="?page=salvar_categoria" method="post">
     <input type="hidden" name="acao" value="cadastrar">

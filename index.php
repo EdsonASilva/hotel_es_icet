@@ -36,6 +36,16 @@
           
           <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Quarto
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="?page=novo_quarto">Nova</a></li>
+            <li><a class="dropdown-item" href="?page=listar_quarto">Listar</a></li>
+          </ul>
+        </li>
+          
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Categoria
           </a>
           <ul class="dropdown-menu">
@@ -80,6 +90,18 @@
                   break;
               case "editar_categoria":
                   include("editar-categoria.php");
+                  break;
+              case "novo_quarto":
+                  include("novo-quarto.php");
+                  break;
+              case "listar_quarto":
+                  include("listar-quarto.php");
+                  break;
+              case "salvar_quarto":
+                  include("salvar-quarto.php");
+                  break;
+              case "editar_quarto":
+                  include("editar-quarto.php");
                   break;
           }
         ?>
