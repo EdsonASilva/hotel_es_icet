@@ -1,7 +1,7 @@
 <h1>Lista de Quartos</h1>
 
 <?php
-    $sql = "select q.descricao as desc_quarto, c.descricao as desc_cat from quarto as q inner join categoria as c where idcategoria=cat_id";
+    $sql = "select q.descricao as desc_quarto, c.descricao as desc_cat, c.valor from quarto as q inner join categoria as c where idcategoria=cat_id";
 
     $res = $conn->query($sql);
 
@@ -12,12 +12,14 @@
             print "<tr>";
             print "<th>Descrição:</th>";
             print "<th>Categoria:</th>";
+            print "<th>Valor:</th>";
             print "<th>Ações</th>";
             print "</tr>";
         while($row = $res->fetch_object()){
             print "<tr>";
             print "<td>".$row->desc_quarto."</td>";
             print "<td>".$row->desc_cat."</td>";
+            print "<td>".$row->valor."</td>";
             print "<td>
             
             <button onclick=\"location.href='?page=editar_quarto&id=".$row->id_quarto."'\" class='btn btn-success'>Editar</button>

@@ -36,8 +36,3 @@
         print "<p class='alert alert-danger'>Sem resultados!</p>";
     }
 ?>
-
-
-
-
-
