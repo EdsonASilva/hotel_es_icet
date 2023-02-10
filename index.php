@@ -21,7 +21,10 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="#">Reservar</a>
+          <a class="nav-link" href="?page=nova_reserva">Reservar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="?page=listar_reserva">Lista de Reservas</a>
         </li>
           
         <li class="nav-item dropdown">
@@ -58,8 +61,6 @@
     </div>
   </div>
 </nav>
-      
-      
       
 <div class="container">
     <div class="row">
@@ -103,6 +104,29 @@
               case "editar_quarto":
                   include("editar-quarto.php");
                   break;
+              case "nova_reserva":
+                  include("nova-reserva.php");
+                  break;
+              case "listar_reserva":
+                  include("listar-reserva.php");
+                  break;
+              case "salvar_reserva":
+                  include("salvar-reserva.php");
+                  break;
+              case "editar_reserva":
+                  include("editar-reserva.php");
+                  break;
+                  
+              default:
+                  ?>
+            <div class="row marcador align-items-center">
+                <div class="col mx-auto text-center">
+                    <figure class="figure">
+                        <img src="logo.png" class="figure-img img-fluid rounded" alt="...">
+                    </figure>
+                </div>
+            </div>
+            <?php
           }
         ?>
             </div>
